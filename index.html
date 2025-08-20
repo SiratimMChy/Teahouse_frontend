@@ -11,11 +11,71 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
         integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="bg-gradient-to-r from-[#f8f8f8] to-[#ffffff] sm:overflow-x-hidden ">
+
+
+   <!-- Navigation Bar -->
+<nav class="bg-white shadow-md fixed w-full z-50">
+    <div class="max-w-[1250px] mx-auto flex justify-between items-center p-5">
+        <!-- Logo -->
+        <div class="flex items-center">
+            <img src="/images/cup.png" alt="Logo" class="h-10 mr-3">
+            <h1 class="text-2xl font-bold text-[#ff6600]">The Tea House</h1>
+        </div>
+
+        <!-- Desktop Menu -->
+        <ul class="hidden sm:flex space-x-6 text-lg font-medium">
+            <li><a href="#home" class="hover:text-[#ff6600] transition">Home</a></li>
+            <li><a href="#Features" class="hover:text-[#ff6600] transition">Featured Products</a></li>
+            <li><a href="#great-tea" class="hover:text-[#ff6600] transition">Signature Teas</a></li>
+            <li><a href="#meet" class="hover:text-[#ff6600] transition">Meet Our Clients</a></li>
+            <li><a href="#news-events" class="hover:text-[#ff6600] transition">News & Events</a></li>
+            <li><a href="#footer" class="hover:text-[#ff6600] transition">Contact</a></li>
+        </ul>
+
+        <!-- Get Started Button (Desktop) -->
+        <div class="hidden sm:block">
+            <button class="bg-gradient-to-r from-orange-500 to-red-500 text-white px-4 py-2 rounded-lg hover:opacity-90 transition">
+                Get Started
+            </button>
+        </div>
+
+        <!-- Mobile Hamburger -->
+        <div class="sm:hidden">
+            <button id="menu-btn" class="focus:outline-none">
+                <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" stroke-width="2"
+                    viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden sm:hidden bg-white">
+        <ul class="flex flex-col space-y-4 p-5 text-lg font-medium">
+            <li><a href="#home" class="hover:text-[#ff6600] transition">Home</a></li>
+            <li><a href="#Features" class="hover:text-[#ff6600] transition">Featured Products</a></li>
+            <li><a href="#great-tea" class="hover:text-[#ff6600] transition">Signature Teas</a></li>
+            <li><a href="#meet" class="hover:text-[#ff6600] transition">Meet Our Clients</a></li>
+            <li><a href="#news-events" class="hover:text-[#ff6600] transition">News & Events</a></li>
+            <li><a href="#footer" class="hover:text-[#ff6600] transition">Contact</a></li>
+            <li>
+                <button class="w-full bg-gradient-to-r from-orange-500 to-red-500 text-white px-4 py-2 rounded-lg hover:opacity-90 transition">
+                    Get Started
+                </button>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+
     <!-- Banner -->
-    <header class="flex flex-col md:flex-row justify-between items-center min-h-[200px] mx-auto max-w-[1250px] p-5">
+    <header class="flex flex-col md:flex-row justify-between items-center min-h-[200px] mx-auto max-w-[1250px] p-5" id="home">
         <div class="left text-center md:text-left mb-10 md:mb-0">
             <h1 class="font-bold text-4xl md:text-[80px] lg:text-6xl">It's good<br />
                 tea time at The<br /> Tea House</h1>
@@ -39,7 +99,7 @@
     </header>
 
     <!-- Features -->
-    <section class="min-h-[200px] mx-auto max-w-[1250px] p-5 mt-[100px]">
+    <section class="min-h-[200px] mx-auto max-w-[1250px] p-5 mt-[100px]" id="Features">
         <h1 class="text-5xl font-bold text-center">Our Featured Products</h1>
         <p class="text-center my-10">There are many variations of passages of Lorem Ipsum available, but the majority
             have
@@ -70,7 +130,7 @@
     </section>
 
     <!-- Great Tea Section -->
-    <div class="great bg-gradient-to-r gap-4 p-5 min-h-[200px] mt-20 mx-auto max-w-[1250px] flex flex-col md:flex-row">
+    <div class="great bg-gradient-to-r gap-4 p-5 min-h-[200px] mt-20 mx-auto max-w-[1250px] flex flex-col md:flex-row" id="great-tea">
         <div class="great_left gap-4 grid grid-cols-2 grid-rows-3 h-full md:w-1/2">
             <div class="bg-gradient-to-r from-[#ff0000] to-[#ff8938] opacity-10 rounded-lg"></div>
             <div class="bg-[#e6a6231a] row-span-2 flex justify-center items-center rounded-lg">
@@ -98,7 +158,7 @@
 
     <!-- Meet Section -->
     <div
-        class="meet px-10 bg-gradient-to-r from-[#fe6e0f] to-[#ff0000] mt-25 mx-auto my-10 p-5 max-w-[1250px] flex flex-col md:flex-row h-[1000px] md:h-[600px] rounded-xl">
+        class="meet px-10 bg-gradient-to-r from-[#fe6e0f] to-[#ff0000] mt-25 mx-auto my-10 p-5 max-w-[1250px] flex flex-col md:flex-row h-[1000px] md:h-[600px] rounded-xl" id="meet">
         <div class="meet_left flex justify-center items-center h-full md:w-1/2">
             <div>
                 <h1 class="text-5xl font-bold text-[#ffffff]">Honoring Our Trusted<br /> Clients</h1>
@@ -141,7 +201,7 @@
         </div>
     </div>
 
-    <section class="news-events min-h-[200px] mx-auto max-w-[1250px] p-5 mt-[100px]">
+    <section class="news-events min-h-[200px] mx-auto max-w-[1250px] p-5 mt-[100px]" id="news-events">
         <h1 class="text-5xl font-bold text-center">Latest News & Events</h1>
         <p class="text-center my-10 text-gray-600">
             Stay connected with The Tea House and explore our newest collections, exclusive programs, and special
@@ -208,7 +268,7 @@
         </div>
     </section>
     <!--footer-->
-    <div class="bg-gradient-to-r from-amber-100 to-amber-200 py-12">
+    <div class="bg-gradient-to-r from-amber-100 to-amber-200 py-12" id="footer">
   <div class="footer max-w-[1250px] mx-auto p-5">
     
     <!-- Top Row -->
@@ -282,5 +342,5 @@
 </div>
 
 </body>
-
+<script src="script.js"></script>
 </html>

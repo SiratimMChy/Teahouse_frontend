@@ -18,11 +18,14 @@
     <!-- Navigation Bar -->
     <nav class="bg-white shadow-md">
         <div class="max-w-[1250px] mx-auto flex justify-between items-center p-5">
+            <!-- Logo -->
             <div class="flex items-center">
                 <img src="/images/cup.png" alt="Logo" class="h-10 mr-3">
                 <h1 class="text-2xl font-bold text-[#ff6600]">The Tea House</h1>
             </div>
-            <ul class="flex space-x-6 text-lg font-medium">
+
+            <!-- Desktop Menu -->
+            <ul class="hidden sm:flex md:flex lg:flex xl:flex 2xl:flex 3xl:flex 5xl:flex space-x-6 text-lg font-medium">
                 <li><a href="#home" class="hover:text-[#ff6600] transition">Home</a></li>
                 <li><a href="#Features" class="hover:text-[#ff6600] transition">Featured Products</a></li>
                 <li><a href="#great-tea" class="hover:text-[#ff6600] transition">Signature Teas</a></li>
@@ -30,12 +33,43 @@
                 <li><a href="#news-events" class="hover:text-[#ff6600] transition">News & Events</a></li>
                 <li><a href="#footer" class="hover:text-[#ff6600] transition">Contact</a></li>
             </ul>
+
+            <!-- Get Started Button -->
             <button
-                class="bg-gradient-to-r from-orange-500 to-red-500 text-white px-4 py-2 rounded-lg hover:opacity-90 transition">
+                class="hidden sm:block md:block lg:block xl:block 2xl:block 3xl:block 5xl:block bg-gradient-to-r from-orange-500 to-red-500 text-white px-4 py-2 rounded-lg hover:opacity-90 transition">
                 Get Started
             </button>
+
+            <!-- Mobile Hamburger -->
+            <div class="sm:hidden">
+                <button id="menu-btn" class="focus:outline-none">
+                    <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" stroke-width="2"
+                        viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden sm:hidden bg-white">
+            <ul class="flex flex-col space-y-4 p-5 text-lg font-medium">
+                <li><a href="#home" class="hover:text-[#ff6600] transition">Home</a></li>
+                <li><a href="#Features" class="hover:text-[#ff6600] transition">Featured Products</a></li>
+                <li><a href="#great-tea" class="hover:text-[#ff6600] transition">Signature Teas</a></li>
+                <li><a href="#meet" class="hover:text-[#ff6600] transition">Meet Our Clients</a></li>
+                <li><a href="#news-events" class="hover:text-[#ff6600] transition">News & Events</a></li>
+                <li><a href="#footer" class="hover:text-[#ff6600] transition">Contact</a></li>
+                <li>
+                    <button
+                        class="w-full bg-gradient-to-r from-orange-500 to-red-500 text-white px-4 py-2 rounded-lg hover:opacity-90 transition">
+                        Get Started
+                    </button>
+                </li>
+            </ul>
         </div>
     </nav>
+
 
 
     <!-- Banner -->

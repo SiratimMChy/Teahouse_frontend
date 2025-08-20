@@ -11,74 +11,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
         integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="script.js"></script>
 </head>
 
 <body class="bg-gradient-to-r from-[#f8f8f8] to-[#ffffff]">
-
-    <!-- Navigation Bar -->
-    <nav class="bg-white shadow-md">
-        <div class="max-w-[1250px] mx-auto flex justify-between items-center p-5">
-            <!-- Logo -->
-            <div class="flex items-center">
-                <img src="images/cup.png" alt="Logo" class="h-10 mr-3">
-                <h1 class="text-2xl font-bold text-[#ff6600]">The Tea House</h1>
-            </div>
-
-            <!-- Desktop Menu -->
-            <ul class="hidden sm:flex md:flex lg:flex xl:flex 2xl:flex 3xl:flex 5xl:flex space-x-6 text-lg font-medium">
-                <li><a href="#home" class="hover:text-[#ff6600] transition">Home</a></li>
-                <li><a href="#Features" class="hover:text-[#ff6600] transition">Featured Products</a></li>
-                <li><a href="#great-tea" class="hover:text-[#ff6600] transition">Signature Teas</a></li>
-                <li><a href="#meet" class="hover:text-[#ff6600] transition">Meet Our Clients</a></li>
-                <li><a href="#news-events" class="hover:text-[#ff6600] transition">News & Events</a></li>
-                <li><a href="#footer" class="hover:text-[#ff6600] transition">Contact</a></li>
-            </ul>
-
-            <!-- Get Started Button -->
-            <button
-                class="hidden sm:block md:block lg:block xl:block 2xl:block 3xl:block 5xl:block bg-gradient-to-r from-orange-500 to-red-500 text-white px-4 py-2 rounded-lg hover:opacity-90 transition">
-                Get Started
-            </button>
-
-            <!-- Mobile Hamburger -->
-            <div class="sm:hidden">
-                <button id="menu-btn" class="focus:outline-none">
-                    <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" stroke-width="2"
-                        viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
-                </button>
-            </div>
-        </div>
-
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden sm:hidden bg-white">
-            <ul class="flex flex-col space-y-4 p-5 text-lg font-medium">
-                <li><a href="#home" class="hover:text-[#ff6600] transition">Home</a></li>
-                <li><a href="#Features" class="hover:text-[#ff6600] transition">Featured Products</a></li>
-                <li><a href="#great-tea" class="hover:text-[#ff6600] transition">Signature Teas</a></li>
-                <li><a href="#meet" class="hover:text-[#ff6600] transition">Meet Our Clients</a></li>
-                <li><a href="#news-events" class="hover:text-[#ff6600] transition">News & Events</a></li>
-                <li><a href="#footer" class="hover:text-[#ff6600] transition">Contact</a></li>
-                <li>
-                    <button
-                        class="w-full bg-gradient-to-r from-orange-500 to-red-500 text-white px-4 py-2 rounded-lg hover:opacity-90 transition">
-                        Get Started
-                    </button>
-                </li>
-            </ul>
-        </div>
-    </nav>
     <!-- Banner -->
-    <header id="home"
-        class="flex flex-col md:flex-row justify-between items-center min-h-[200px] mx-auto max-w-[1250px] p-5">
+    <header class="flex flex-col md:flex-row justify-between items-center min-h-[200px] mx-auto max-w-[1250px] p-5">
         <div class="left text-center md:text-left mb-10 md:mb-0">
-            <h1 class="font-bold text-4xl md:text-[80px] lg:text-6xl">Savor Every Sip<br />
-                at The Premier<br /> Tea House</h1>
-            <p class="text-lg my-4">Indulge in Exquisite Teas and Handcrafted Botanical Blends, Curated<br /> to Refresh
-                Your Senses and Inspire Moments of Pure Delight.</p>
-
+            <h1 class="font-bold text-4xl md:text-[80px] lg:text-6xl">It's good<br />
+                tea time at The<br /> Tea House</h1>
+            <p class="text-lg my-4">Tea and Botanical Solutions Supplier Give Optimum<br /> Satisfaction To Your Taste
+                Buds.</p>
             <button
                 class="w-full md:w-[200px] text-white h-[64px] rounded-xl bg-gradient-to-r from-[#ff8938] to-[#ff0000] transition duration-300 hover:scale-105">
                 Explore More<i class="fa-solid fa-arrow-up-right-from-square ml-2" style="color: #ffffff;"></i>
@@ -97,7 +39,7 @@
     </header>
 
     <!-- Features -->
-    <section id="Features" class="min-h-[200px] mx-auto max-w-[1250px] p-5 mt-[100px]">
+    <section class="min-h-[200px] mx-auto max-w-[1250px] p-5 mt-[100px]">
         <h1 class="text-5xl font-bold text-center">Our Featured Products</h1>
         <p class="text-center my-10">There are many variations of passages of Lorem Ipsum available, but the majority
             have
@@ -107,29 +49,28 @@
             <div class="feature_card text-center bg-gradient-to-b from-[#e8ebf0] to-[#f0e8e8] p-4 rounded-lg">
                 <img src="images/tea-1.png" class="mx-auto block" alt="Milk Tea">
                 <h1 class="text-2xl font-bold">Milk Tea</h1>
-                <p>Rich creamy milk tea blend</p>
+                <p>Rich, creamy milk tea that soothes your soul.</p>
             </div>
             <div class="feature_card text-center bg-gradient-to-b from-[#e8ebf0] to-[#f0e8e8] p-4 rounded-lg">
                 <img src="images/tea-2.png" class="mx-auto block" alt="Black Tea">
                 <h1 class="text-2xl font-bold">Black Tea</h1>
-                <p>Bold black tea daily rich taste</p>
+                <p>Bold black tea with a rich, robust flavor.</p>
             </div>
             <div class="feature_card text-center bg-gradient-to-b from-[#e8ebf0] to-[#f0e8e8] p-4 rounded-lg">
                 <img src="images/tea-3.png" class="mx-auto block" alt="Lemon Tea">
                 <h1 class="text-2xl font-bold">Lemon Tea</h1>
-                <p>Zesty lemon tea refresh flavor</p>
+                <p>Refreshing lemon tea with a zesty twist.</p>
             </div>
             <div class="feature_card text-center bg-gradient-to-b from-[#e8ebf0] to-[#f0e8e8] p-4 rounded-lg">
                 <img src="images/tea-4.png" class="mx-auto block" alt="Green Tea">
                 <h1 class="text-2xl font-bold">Green Tea</h1>
-                <p>Fresh green tea wellness boost</p>
+                <p>Fresh green tea with a delicate aroma.</p>
             </div>
         </div>
     </section>
 
     <!-- Great Tea Section -->
-    <div id="great-tea"
-        class="great bg-gradient-to-r gap-4 p-5 min-h-[200px] mt-20 mx-auto max-w-[1250px] flex flex-col md:flex-row">
+    <div class="great bg-gradient-to-r gap-4 p-5 min-h-[200px] mt-20 mx-auto max-w-[1250px] flex flex-col md:flex-row">
         <div class="great_left gap-4 grid grid-cols-2 grid-rows-3 h-full md:w-1/2">
             <div class="bg-gradient-to-r from-[#ff0000] to-[#ff8938] opacity-10 rounded-lg"></div>
             <div class="bg-[#e6a6231a] row-span-2 flex justify-center items-center rounded-lg">
@@ -141,27 +82,30 @@
             <div class="bg-gradient-to-r from-[#d9d9d9] to-[#5776391a] rounded-lg"></div>
         </div>
         <div class="great_right h-full md:w-1/2">
-            <h1 class="text-5xl font-bold">Exquisite Tea, Perfectly <br /> Crafted</h1>
-            <p class="my-6">Gong Cha delivers premium tea experiences with meticulous care, offering unmatched flavor
-                and refined presentation that delights every tea enthusiast.</p>
-            <h2 class="text-xl font-bold mt-3">Distinctive Flavor</h2>
-            <p class="my-4">Each blend is thoughtfully curated to provide a rich, smooth, and memorable taste in every
-                cup.</p>
-            <h2 class="text-xl font-bold my-3">Exceptional Quality</h2>
-            <p class="mt-0">Our teas are crafted from the finest ingredients, ensuring elegance, consistency, and
-                long-lasting satisfaction.</p>
-
+            <h1 class="text-5xl font-bold">Great Tea, Freshly <br /> Presented</h1>
+            <p class="my-6">The meaning of “Gong Cha” in Chinese is to provide the best tea to the emperor from all
+                possessions. It represents the highest quality and a commitment to self-expectation.
+                Founded in 2006, Gong Cha has been deeply appreciated by its customers for its strong reputation and
+                unique, customized service, originally originating from Taiwan.</p>
+            <h2 class="text-xl font-bold mt-3">Unique Taste</h2>
+            <p class="my-4">“With its unique design, unlike other teapots,<br />it exudes a sense of luxury and
+                minimalist elegance.”</p>
+            <h2 class="text-xl font-bold my-3">Premium Quality</h2>
+            <p class="mt-0">“Crafted with premium quality, it enhances<br /> the elegance of tea while ensuring lasting
+                durability.”</p>
         </div>
     </div>
 
     <!-- Meet Section -->
-    <div id="meet"
+    <div
         class="meet px-10 bg-gradient-to-r from-[#fe6e0f] to-[#ff0000] mt-25 mx-auto my-10 p-5 max-w-[1250px] flex flex-col md:flex-row h-[1000px] md:h-[600px] rounded-xl">
         <div class="meet_left flex justify-center items-center h-full md:w-1/2">
             <div>
                 <h1 class="text-5xl font-bold text-[#ffffff]">Honoring Our Trusted<br /> Clients</h1>
-                <p class="mt-8 mb-5 text-[#ffffff]">Hear the inspiring stories from our clients who trust our expertise
-                    and services for exceptional results every time.</p>
+                    <p class="mt-8 mb-5 text-[#ffffff]">Hear the inspiring stories from our clients who trust our
+                        expertise
+                        and services for exceptional results every time.</p>
+
                 <button class="rounded-lg bg-[#ffffff] w-[139px] h-[56px] text-xl font-bold text-[#ff6600]">Show
                     All</button>
             </div>
@@ -170,10 +114,9 @@
         <div class="meet_right h-full md:w-1/2 relative">
             <div
                 class="customer_review z-10 bg-white md:h-[200px] p-10 w-[80vw] md:w-[70%] top-[26%] md:top-[37%] md:left-[5%] absolute rounded-sm">
-                <p class="text-[16px]">Our clients consistently praise our professionalism, attention to detail, and
-                    quality service.</p>
-                <h2 class="text-[16px] font-bold md:my-2">Ilham Yuda</h2>
-                <h5 class="text-sm">Businessman</h5>
+                <p class="text-[16px]">Our Tea House serves the finest blends, carefully prepared to bring warmth, flavor, and calm to every sip.</p>
+                <h2 class="text-[16px] font-bold md:my-2">Zayd Ashraf</h2>
+                <h5 class="text-sm">Business Man</h5>
                 <div class="absolute -top-[40px] -left-[30px] rounded-full p-1 bg-white">
                     <img src="images/client.png" alt="Client Image">
                 </div>
@@ -181,17 +124,15 @@
             </div>
             <div
                 class="customer_review opacity-40 bg-white md:h-[200px] p-10 w-[80vw] md:w-[70%] top-[0%] md:top-[15%] left-[15%] md:left-[30%] absolute rounded-sm">
-                <p class="text-[16px]">They value our consistent quality and tailored solutions designed to meet every
-                    need.</p>
+                <p class="text-[16px]">Every cup is crafted with care, offering a delightful experience that awakens the senses and soothes the mind.</p>
                 <div class="absolute -top-[30px] -left-[30px] rounded-full p-1 bg-white">
                     <img src="images/client.png" alt="Client Image">
                 </div>
             </div>
             <div
                 class="customer_review opacity-40 bg-white md:h-[200px] p-10 w-[80vw] md:w-[70%] top-[40%] md:top-[57%] left-[15%] md:left-[30%] absolute rounded-sm">
-                <p class="text-[16px]">Clients appreciate our dedication, professionalism, and exceptional service
-                    experience.</p>
-                <h2 class="text-[16px] font-bold my-4">Ilham Yuda</h2>
+                <p class="text-[16px]">Visiting our Tea House is a journey of taste and relaxation, where each tea tells a story and brightens your day.</p>
+                <h2 class="text-[16px] font-bold my-4">Akram manir</h2>
                 <h5 class="text-sm">Designer</h5>
                 <div class="absolute -top-[30px] -left-[30px] rounded-full p-1 bg-white">
                     <img src="images/client.png" alt="Client Image">
@@ -200,8 +141,7 @@
         </div>
     </div>
 
-    <!--news-events-->
-    <section id="news-events" class="news-events min-h-[200px] mx-auto max-w-[1250px] pb-20 p-5 mt-[100px]">
+    <section class="news-events min-h-[200px] mx-auto max-w-[1250px] p-5 mt-[100px]">
         <h1 class="text-5xl font-bold text-center">Latest News & Events</h1>
         <p class="text-center my-10 text-gray-600">
             Stay connected with The Tea House and explore our newest collections, exclusive programs, and special
@@ -216,7 +156,7 @@
                         class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300">
                 </div>
                 <div class="p-6">
-                    <p class="text-sm text-gray-500">Feb 05, 2027</p>
+                    <p class="text-sm text-gray-500">Feb 05, 2026</p>
                     <h3 class="text-xl font-semibold mt-1">Seasonal Spring Tea Celebration</h3>
                     <p class="mt-2 text-sm text-gray-600">
                         Embrace the arrival of spring with our exclusive tea collection, thoughtfully curated with rare
@@ -235,7 +175,7 @@
                         class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300">
                 </div>
                 <div class="p-6">
-                    <p class="text-sm text-gray-500">Mar 10, 2027</p>
+                    <p class="text-sm text-gray-500">Mar 10, 2026</p>
                     <h3 class="text-xl font-semibold mt-1">Premier Rewards Program</h3>
                     <p class="mt-2 text-sm text-gray-600">
                         Join our premier rewards program and enjoy tailored benefits, exclusive offers, and special
@@ -254,7 +194,7 @@
                         class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300">
                 </div>
                 <div class="p-6">
-                    <p class="text-sm text-gray-500">Apr 20, 2027</p>
+                    <p class="text-sm text-gray-500">Apr 20, 2026</p>
                     <h3 class="text-xl font-semibold mt-1">Grand Opening Celebration</h3>
                     <p class="mt-2 text-sm text-gray-600">
                         Discover our newest location, thoughtfully designed to offer elegant spaces where you can enjoy
@@ -268,81 +208,78 @@
         </div>
     </section>
     <!--footer-->
-    <div id="footer" class="bg-gradient-to-r from-amber-100 to-amber-200 py-12">
-        <div class="footer max-w-[1250px] mx-auto p-5">
-
-            <!-- Top Row -->
-            <div class="flex flex-col md:flex-row justify-between items-center  pb-6 mb-6">
-                <img src="images/cup.png" alt="Logo" class="h-12">
-                <div class="flex items-center mt-4 md:mt-0">
-                    <p class="mr-5 font-medium text-black-700">Ready to begin your tea journey?</p>
-                    <button
-                        class="bg-gradient-to-r from-orange-500 to-red-500 text-white px-5 py-2 rounded-lg hover:opacity-90 transition">
-                        Get Started
-                    </button>
-                </div>
-            </div>
-
-            <!-- Links Section -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-sm">
-
-                <!-- Quick Links -->
-                <div>
-                    <h4 class="font-semibold text-lg uppercase ">Quick Links</h4>
-                    <ul class="mt-4 space-y-2">
-                        <li><a href="#" class="hover:text-orange-600 transition">Home</a></li>
-                        <li><a href="#" class="hover:text-orange-600 transition">About Us</a></li>
-                        <li><a href="#" class="hover:text-orange-600 transition">Our Teas</a></li>
-                        <li><a href="#" class="hover:text-orange-600 transition">Privacy Policy</a></li>
-                    </ul>
-                </div>
-
-                <!-- Services -->
-                <div>
-                    <h4 class="font-semibold text-lg uppercase">Our Services</h4>
-                    <ul class="mt-4 space-y-2">
-                        <li><a href="#" class="hover:text-orange-600 transition">Tea Tastings</a></li>
-                        <li><a href="#" class="hover:text-orange-600 transition">Tea Subscriptions</a></li>
-                        <li><a href="#" class="hover:text-orange-600 transition">Workshops</a></li>
-                        <li><a href="#" class="hover:text-orange-600 transition">Custom Blends</a></li>
-                    </ul>
-                </div>
-
-                <!-- Help -->
-                <div>
-                    <h4 class="font-semibold text-black-600 text-lg uppercase">Help</h4>
-                    <ul class="mt-4 space-y-2">
-                        <li><a href="#" class="hover:text-orange-600 transition">FAQs</a></li>
-                        <li><a href="#" class="hover:text-orange-600 transition">Contact Us</a></li>
-                    </ul>
-                </div>
-
-                <!-- Newsletter -->
-                <div>
-                    <h4 class="font-semibold text-lg uppercase">Subscribe</h4>
-                    <p class="text-sm text-black-600 mt-2">Stay updated with exclusive offers & tea stories.</p>
-                    <div class="flex mt-4">
-                        <input type="email" class="flex-1 border-b border-gray-400 outline-none pb-2 bg-transparent"
-                            placeholder="Email address">
-                        <button
-                            class="ml-2 bg-orange-600 text-white h-10 w-10 flex items-center justify-center rounded-full hover:bg-orange-700 transition">
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </button>
-                    </div>
-                    <div class="mt-5 flex space-x-4 text-black-600">
-                        <a href="#"><i class="fa-brands fa-facebook-f hover:text-orange-600 transition"></i></a>
-                        <a href="#"><i class="fa-brands fa-twitter hover:text-orange-600 transition"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram hover:text-orange-600 transition"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Bottom Copyright -->
-            <div class="mt-8 text-center text-sm text-black-500">
-                © 2027 The Tea House. All rights reserved.
-            </div>
-        </div>
+    <div class="bg-gradient-to-r from-amber-100 to-amber-200 py-12">
+  <div class="footer max-w-[1250px] mx-auto p-5">
+    
+    <!-- Top Row -->
+    <div class="flex flex-col md:flex-row justify-between items-center  pb-6 mb-6">
+      <img src="images/cup.png" alt="Logo" class="h-12">
+      <div class="flex items-center mt-4 md:mt-0">
+        <p class="mr-5 font-medium text-black-700">Ready to begin your tea journey?</p>
+        <button class="bg-gradient-to-r from-orange-500 to-red-500 text-white px-5 py-2 rounded-lg hover:opacity-90 transition">
+          Get Started
+        </button>
+      </div>
     </div>
+
+    <!-- Links Section -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-sm">
+      
+      <!-- Quick Links -->
+      <div>
+        <h4 class="font-semibold text-lg uppercase ">Quick Links</h4>
+        <ul class="mt-4 space-y-2">
+          <li><a href="#" class="hover:text-orange-600 transition">Home</a></li>
+          <li><a href="#" class="hover:text-orange-600 transition">About Us</a></li>
+          <li><a href="#" class="hover:text-orange-600 transition">Our Teas</a></li>
+          <li><a href="#" class="hover:text-orange-600 transition">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <!-- Services -->
+      <div>
+        <h4 class="font-semibold text-lg uppercase">Our Services</h4>
+        <ul class="mt-4 space-y-2">
+          <li><a href="#" class="hover:text-orange-600 transition">Tea Tastings</a></li>
+          <li><a href="#" class="hover:text-orange-600 transition">Tea Subscriptions</a></li>
+          <li><a href="#" class="hover:text-orange-600 transition">Workshops</a></li>
+          <li><a href="#" class="hover:text-orange-600 transition">Custom Blends</a></li>
+        </ul>
+      </div>
+
+      <!-- Help -->
+      <div>
+        <h4 class="font-semibold text-black-600 text-lg uppercase">Help</h4>
+        <ul class="mt-4 space-y-2">
+          <li><a href="#" class="hover:text-orange-600 transition">FAQs</a></li>
+          <li><a href="#" class="hover:text-orange-600 transition">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Newsletter -->
+      <div>
+        <h4 class="font-semibold text-lg uppercase">Subscribe</h4>
+        <p class="text-sm text-black-600 mt-2">Stay updated with exclusive offers & tea stories.</p>
+        <div class="flex mt-4">
+          <input type="email" class="flex-1 border-b border-gray-400 outline-none pb-2 bg-transparent" placeholder="Email address">
+          <button class="ml-2 bg-orange-600 text-white h-10 w-10 flex items-center justify-center rounded-full hover:bg-orange-700 transition">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+        <div class="mt-5 flex space-x-4 text-black-600">
+          <a href="#"><i class="fa-brands fa-facebook-f hover:text-orange-600 transition"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter hover:text-orange-600 transition"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram hover:text-orange-600 transition"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Copyright -->
+    <div class="mt-8 text-center text-sm text-black-500">
+      © 2027 The Tea House. All rights reserved.
+    </div>
+  </div>
+</div>
 
 </body>
 
